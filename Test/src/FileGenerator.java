@@ -16,9 +16,9 @@ public class FileGenerator{
 	        try {
 	        	
 	        	FileGenerator ob = new FileGenerator();
-		        FileWriter f = new FileWriter("C:\\Users\\Acer\\Desktop\\test\\"+"textfile"+i+".txt");
+		        FileWriter f = new FileWriter("C:\\Users\\Acer\\Desktop\\test\\"+"textfile-"+i+".txt");
 		        
-		        f.write(ob.randomWrite()+" textfile"+ i);
+		        f.write(ob.randomWrite()+" textfile-"+ i);
 		        
 		        f.close();
 		        

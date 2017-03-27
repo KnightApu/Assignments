@@ -1,8 +1,8 @@
-
-
-
+import java.util.ArrayList;
 
 public class Test {
+	
+	static ArrayList<String> stringObject = new ArrayList<String>();
 	
 	
 	

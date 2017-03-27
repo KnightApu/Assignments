@@ -1,13 +1,9 @@
-import java.io.File;
+public class Threads extends MergerClass  implements Runnable{
+	
+	
+	
+	
 
-public class Threads extends AssistantClass  implements Runnable{
-	
-	
-	
-	String dir = "C:\\Users\\Acer\\Desktop\\test";;
-	File folder = new File(dir);
-	File[] listOfFiles = folder.listFiles();
-	
 	String path ;
 	int firstFileToScan;
 	int lastFileToScan;
@@ -17,6 +13,8 @@ public class Threads extends AssistantClass  implements Runnable{
 		this.path = path;
 		this.firstFileToScan = firstFileToScan;
 		this.lastFileToScan = lastFileToScan;
+		
+		//System.out.println(path + " " + firstFileToScan + " " + lastFileToScan + Thread.currentThread().getName());
 		
 	}
 	public void run(){
@@ -32,8 +30,9 @@ public class Threads extends AssistantClass  implements Runnable{
 	
 	public void writingByThreads(){
 		
-		AssistantClass firstWriter = new AssistantClass();
-		firstWriter.readerWriter(path, firstFileToScan, lastFileToScan);
+	
+		
+		readerWriter(path, firstFileToScan, lastFileToScan);
 				
 			
 
